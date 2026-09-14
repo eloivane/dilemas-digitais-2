@@ -2,97 +2,57 @@
 <html lang="pt-BR">
 
 <head>
-
-<meta charset="UTF-8">
-
-<title>Quiz</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Segurança Digital</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+  <header>
+    <h1>🎯 Quiz de Segurança Digital</h1>
+  </header>
 
-<header>
+  <nav>
+    <a href="index.html">🏠 Início</a>
+    <a href="dicas.html">💡 Dicas</a>
+    <a href="golpes.html">🚨 Golpes</a>
+    <a href="privacidade.html">🔐 Privacidade</a>
+    <a href="quiz.html">🎯 Quiz</a>
+  </nav>
 
-<h1>🎯 Quiz de Segurança Digital</h1>
+  <main>
+    <section id="quiz">
+      <h2>Teste seus conhecimentos!</h2>
 
-</header>
+      <div class="pergunta">
+        <p>1 - Você deve compartilhar sua senha?</p>
+        <label>
+          <input type="radio" name="q1" value="1"> Não
+        </label>
+        <label>
+          <input type="radio" name="q1" value="0"> Sim
+        </label>
+      </div>
 
+      <div class="pergunta">
+        <p>2 - Deve confirmar antes de enviar dinheiro?</p>
+        <label>
+          <input type="radio" name="q2" value="1"> Sim
+        </label>
+        <label>
+          <input type="radio" name="q2" value="0"> Não
+        </label>
+      </div>
 
+      <button type="button" onclick="corrigirQuiz()">Ver resultado</button>
 
-<nav>
+      <p id="resultado"></p>
+    </section>
+  </main>
 
-<a href="index.html">🏠 Início</a>
-<a href="dicas.html">💡 Dicas</a>
-<a href="golpes.html">🚨 Golpes</a>
-<a href="privacidade.html">🔐 Privacidade</a>
-<a href="quiz.html">🎯 Quiz</a>
-
-</nav>
-
-
-
-<section id="quiz">
-
-
-<h2>Teste seus conhecimentos!</h2>
-
-
-<p>
-1 - Você deve compartilhar sua senha?
-</p>
-
-<label>
-<input type="radio" name="q1" value="1">
-Não
-</label>
-
-
-<label>
-<input type="radio" name="q1" value="0">
-Sim
-</label>
-
-
-
-
-<p>
-2 - Deve confirmar antes de enviar dinheiro?
-</p>
-
-
-<label>
-<input type="radio" name="q2" value="1">
-Sim
-</label>
-
-
-<label>
-<input type="radio" name="q2" value="0">
-Não
-</label>
-
-
-
-<button onclick="corrigirQuiz()">
-Ver resultado
-</button>
-
-
-
-<p id="resultado"></p>
-
-
-</section>
-
-
-
-<script src="script.js"></script>
-
-
+  <script src="script.js"></script>
 </body>
 
 </html>
